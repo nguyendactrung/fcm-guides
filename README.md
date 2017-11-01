@@ -2,6 +2,18 @@
 
 Firebase Cloud Messaging -  deliver and receive messages and notifications on iOS.
 
+<!-- TOC -->
+
+- [Introduction](#introduction)
+- [Key capabilities](#key-capabilities)
+- [About FCM Messages](#about-fcm-messages)
+    - [Message types](#message-types)
+- [How it works?](#how-it-works)
+- [Understanding Firebase Cloud Messaging on iOS](#understanding-firebase-cloud-messaging-on-ios)
+- [FCM Server](#fcm-server)
+
+<!-- /TOC -->
+
 ## Introduction
 
 Using FCM, you can notify an iOS client app that new email or other data is available to sync. You can send notification messages to drive user re-engagement and retention.
