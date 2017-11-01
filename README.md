@@ -1,16 +1,22 @@
-# iOS Firebase Cloud Messaging
+# Firebase Cloud Messaging on iOS
 
 Deliver and receive messages and notifications on iOS.
 
 <!-- TOC -->
 
 - [Introduction](#introduction)
-- [Key capabilities](#key-capabilities)
 - [About FCM Messages](#about-fcm-messages)
+  - [Key capabilities](#key-capabilities)
   - [Message types](#message-types)
 - [How it works?](#how-it-works)
 - [Understanding Firebase Cloud Messaging on iOS](#understanding-firebase-cloud-messaging-on-ios)
-- [FCM Server](#fcm-server)
+  - [APNs](#apns)
+  - [FCM](#fcm)
+  - [How?](#how)
+  - [Under the hood](#under-the-hood)
+  - [Connect to FCM](#connect-to-fcm)
+  - [Restrictions](#restrictions)
+- [FCM Server (In Progress)](#fcm-server-in-progress)
 
 <!-- /TOC -->
 
@@ -18,7 +24,12 @@ Deliver and receive messages and notifications on iOS.
 
 Using FCM, you can notify an iOS client app that new email or other data is available to sync. You can send notification messages to drive user re-engagement and retention.
 
-## Key capabilities
+
+## About FCM Messages
+
+Firebase Cloud Messaging (FCM) offers a broad range of messaging options and capabilities
+
+### Key capabilities
 
 | Capability    |     Explains  |
 | ------------- |---------------|
@@ -26,13 +37,9 @@ Using FCM, you can notify an iOS client app that new email or other data is avai
 | Versatile message targeting    | Distribute messages to your client app in any of 3 ways—to single devices, to groups of devices, or to devices subscribed to topics.      |
 | Send messages from client apps | Send acknowledgments, chats, and other messages from devices back to your server over FCM’s reliable and battery-efficient connection channel. |
 
-## About FCM Messages
-
-Firebase Cloud Messaging (FCM) offers a broad range of messaging options and capabilities
-
 ### Message types
 
-* Notification messages, sometimes thought of as "display messages." These are handled by the FCM SDK automatically.
+- Notification messages, sometimes thought of as "display messages." These are handled by the FCM SDK automatically.
 
 ```json
 {
@@ -48,7 +55,7 @@ Firebase Cloud Messaging (FCM) offers a broad range of messaging options and cap
 
 > Notification messages have a predefined set of user-visible keys and an optional data payload of custom key-value pairs.
 
-* Data messages, which are handled by the client app.
+- Data messages, which are handled by the client app.
 
 ```json
 {
@@ -69,12 +76,42 @@ Firebase Cloud Messaging (FCM) offers a broad range of messaging options and cap
 
 An FCM implementation includes two main components for sending and receiving:
 
-* A trusted environment such as Cloud Functions for Firebase or an app server on which to build, target, and send messages and an iOS client app that receives messages.
+- A trusted environment such as Cloud Functions for Firebase or an app server on which to build, target, and send messages and an iOS client app that receives messages.
 
-* You can send messages via the Admin SDK or the HTTP and XMPP APIs. For testing or for sending marketing or engagement messages with powerful built-in targeting and analytics, you can also use the Notifications composer.
+- You can send messages via the [HTTP and XMPP APIs](#fcm-server). For testing or for sending marketing or engagement messages with powerful built-in targeting and analytics, you can also use the Notifications composer.
 
 ![](https://firebase.google.com/docs/cloud-messaging/images/messaging-overview.png)
 
 ## Understanding Firebase Cloud Messaging on iOS
 
-## FCM Server
+### APNs
+
+![](apns.png)
+
+### FCM
+
+![](fcm.png)
+
+### How?
+
+![](steps.png)
+
+Everything we need
+
+![](how.png)
+
+### Under the hood
+
+![](swizzling.png)
+
+> [Method swizzling](http://nshipster.com/method-swizzling/) is the process of changing the implementation of an existing selector
+
+### Connect to FCM
+
+![](connect-from-client.png)
+
+### Restrictions
+
+![](restrictions.png)
+
+## FCM Server (In Progress)
