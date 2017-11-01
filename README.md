@@ -8,11 +8,11 @@ Using FCM, you can notify an iOS client app that new email or other data is avai
 
 ## Key capabilities
 
-|                                             |                                                                                                                                                                      |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Send notification messages or data messages | Send notification messages that are displayed to your user. Or send data messages and determine completely what happens in your application code. See Message types. |
-| Versatile message targeting                 | Distribute messages to your client app in any of 3 ways—to single devices, to groups of devices, or to devices subscribed to topics.                                 |
-| Send messages from client apps              | Send acknowledgments, chats, and other messages from devices back to your server over FCM’s reliable and battery-efficient connection channel.                       |
+| Capability    |     Explains  |
+| ------------- |---------------|
+| Send notification messages or data messages    | Send notification messages that are displayed to your user. Or send data messages and determine completely what happens in your application code. See Message types. |
+| Versatile message targeting    | Distribute messages to your client app in any of 3 ways—to single devices, to groups of devices, or to devices subscribed to topics.      |
+| Send messages from client apps | Send acknowledgments, chats, and other messages from devices back to your server over FCM’s reliable and battery-efficient connection channel. |
 
 ## About FCM Messages
 
