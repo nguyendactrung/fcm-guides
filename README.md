@@ -1,16 +1,16 @@
-# Firebase Cloud Messaging
+# iOS Firebase Cloud Messaging
 
-Firebase Cloud Messaging -  deliver and receive messages and notifications on iOS.
+Deliver and receive messages and notifications on iOS.
 
 <!-- TOC -->
 
-- [Introduction](#introduction)
-- [Key capabilities](#key-capabilities)
-- [About FCM Messages](#about-fcm-messages)
-    - [Message types](#message-types)
-- [How it works?](#how-it-works)
-- [Understanding Firebase Cloud Messaging on iOS](#understanding-firebase-cloud-messaging-on-ios)
-- [FCM Server](#fcm-server)
+  - [Introduction](#introduction)
+  - [Key capabilities](#key-capabilities)
+  - [About FCM Messages](#about-fcm-messages)
+      - [Message types](#message-types)
+  - [How it works?](#how-it-works)
+  - [Understanding Firebase Cloud Messaging on iOS](#understanding-firebase-cloud-messaging-on-ios)
+  - [FCM Server](#fcm-server)
 
 <!-- /TOC -->
 
