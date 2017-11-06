@@ -4,19 +4,31 @@ Deliver and receive messages and notifications on iOS.
 
 <!-- TOC -->
 
-- [Introduction](#introduction)
-- [About FCM Messages](#about-fcm-messages)
-  - [Key capabilities](#key-capabilities)
-  - [Message types](#message-types)
-- [How it works?](#how-it-works)
-- [Understanding Firebase Cloud Messaging on iOS](#understanding-firebase-cloud-messaging-on-ios)
-  - [APNs](#apns)
-  - [FCM](#fcm)
-  - [How?](#how)
-  - [Under the hood](#under-the-hood)
-  - [Connect to FCM](#connect-to-fcm)
-  - [Restrictions](#restrictions)
-- [FCM Server (In Progress)](#fcm-server-in-progress)
+- [Firebase Cloud Messaging on iOS](#firebase-cloud-messaging-on-ios)
+    - [Introduction](#introduction)
+    - [About FCM Messages](#about-fcm-messages)
+        - [Key capabilities](#key-capabilities)
+        - [Message types](#message-types)
+    - [How it works?](#how-it-works)
+    - [Understanding Firebase Cloud Messaging on iOS](#understanding-firebase-cloud-messaging-on-ios)
+        - [APNs](#apns)
+        - [FCM](#fcm)
+        - [How?](#how)
+        - [Under the hood](#under-the-hood)
+        - [Connect to FCM](#connect-to-fcm)
+        - [Restrictions](#restrictions)
+    - [FCM Server](#fcm-server)
+        - [FCM Server Protocols](#fcm-server-protocols)
+        - [Build App Server Send Requests](#build-app-server-send-requests)
+        - [Open sources implement FCM Server Protocols](#open-sources-implement-fcm-server-protocols)
+            - [C# / .NET](#c--net)
+            - [Python](#python)
+            - [GO](#go)
+            - [Ruby](#ruby)
+            - [Rust](#rust)
+            - [Node.js](#nodejs)
+            - [PHP](#php)
+            - [Java](#java)
 
 <!-- /TOC -->
 
@@ -158,16 +170,16 @@ Using the FCM app server protocols, you can build message requests and send them
 
 - [fcm-rust](https://github.com/panicbit/fcm-rust)
 
- #### Node.js
+#### Node.js
 
 - [fcm-push](https://github.com/nandarustam/fcm-push)
 
- #### PHP
+#### PHP
 
 - [php-fcm](https://github.com/Paragraph1/php-fcm)
 - [firebase-cloud-messaging-api-php-client](https://github.com/fre5h/firebase-cloud-messaging-api-php-client)
 
- #### Java 
+#### Java 
 
 - [FcmJava](https://github.com/bytefish/FcmJava)
 - [fcmxmppserver - XMPP Connection Server for FCM](https://github.com/carlosCharz/fcmxmppserver) 
