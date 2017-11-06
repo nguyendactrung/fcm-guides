@@ -114,4 +114,60 @@ Everything we need
 
 ![](restrictions.png)
 
-## FCM Server (In Progress)
+## FCM Server
+
+### FCM Server Protocols
+
+Currently FCM provides these raw server protocols:
+
+- FCM HTTP v1 API
+- Legacy HTTP protocol
+- Legacy XMPP Protocol
+
+### Build App Server Send Requests
+
+Using the FCM app server protocols, you can build message requests and send them to these types of targets:
+
+- Topic name
+- Condition
+- Device registration token
+- Device group name (legacy protocols only)
+
+### Open sources implement FCM Server Protocols
+
+#### C# / .NET
+
+- [firebaseNet](https://github.com/tiagomtotti/firebaseNet)
+
+#### Python
+
+- [PyFCM](https://github.com/olucurious/PyFCM)
+- [fcm-django](https://github.com/xtrinch/fcm-django)
+- [python-gcm](https://github.com/geeknam/python-gcm)
+
+#### GO 
+
+- [fcm](https://github.com/edganiukov/fcm)
+
+#### Ruby
+
+- [Andpush](https://github.com/yuki24/andpush)
+- [fcm](https://github.com/spacialdb/fcm)
+
+#### Rust
+
+- [fcm-rust](https://github.com/panicbit/fcm-rust)
+
+ #### Node.js
+
+- [fcm-push](https://github.com/nandarustam/fcm-push)
+
+ #### PHP
+
+- [php-fcm](https://github.com/Paragraph1/php-fcm)
+- [firebase-cloud-messaging-api-php-client](https://github.com/fre5h/firebase-cloud-messaging-api-php-client)
+
+ #### Java 
+
+- [FcmJava](https://github.com/bytefish/FcmJava)
+- [fcmxmppserver - XMPP Connection Server for FCM](https://github.com/carlosCharz/fcmxmppserver) 
